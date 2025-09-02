@@ -26,8 +26,6 @@ public static class ClassInjectorBase
     /// Tries to get the Garbage collector pointer from the m_target object from the m_target of the delegate.
     /// Fixes Harmony in Unity 2021.2.x .
     /// </summary>
-    /// <param name="pointer"></param>
-    /// <returns></returns>
     private static IntPtr FallbackGetGcHandlePtrFromIl2CppDelegateMTarget(IntPtr pointer)
     {
         if (IL2CPP.il2cpp_class_is_assignable_from(Il2CppClassPointerStore<Il2CppSystem.MulticastDelegate>.NativeClassPtr, IL2CPP.il2cpp_object_get_class(pointer)))
